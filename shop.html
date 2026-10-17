@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop All Products | Paw Paradise</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header id="site-header"></header>
+    <main class="container page-main">
+        <div class="page-banner"><span class="eyebrow">THE GOOD STUFF</span>
+            <h1>Shop all products</h1>
+            <p>Little treats, everyday essentials and big reasons to wag.</p>
+        </div>
+        <div class="shop-toolbar">
+            <label class="search-box"><span>⌕</span><input id="product-search" type="search"
+                    placeholder="Search food, toys, accessories..."></label>
+            <select id="category-filter" aria-label="Filter category">
+                <option value="all">All categories</option>
+                <option value="Dogs">Dogs</option>
+                <option value="Cats">Cats</option>
+                <option value="Birds">Birds</option>
+                <option value="Fish">Fish</option>
+            </select>
+            <select id="sort-products" aria-label="Sort products">
+                <option value="featured">Featured</option>
+                <option value="low">Price: low to high</option>
+                <option value="high">Price: high to low</option>
+                <option value="name">Name: A to Z</option>
+            </select>
+        </div>
+        <p id="product-count" class="result-count"></p>
+        <div id="all-products" class="product-grid"></div>
+    </main>
+    <footer id="site-footer"></footer>
+</body>
+
+</html>
